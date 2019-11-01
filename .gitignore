@@ -102,3 +102,6 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+# don't accidentally add the api key to the repo
+apikey

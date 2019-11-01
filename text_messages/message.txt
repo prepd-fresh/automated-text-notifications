@@ -1,0 +1,1 @@
+Hey {NAME}, your order : {ORDER} from Prep'd Fresh will be delivered today between 5-7. If you are not home the meals will be left on your front porch! #readyprepgo Reply STOP to stop receiving text notifications.
