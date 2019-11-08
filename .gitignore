@@ -105,3 +105,4 @@ venv.bak/
 
 # don't accidentally add the api key to the repo
 apikey
+user_data/blacklist.txt
