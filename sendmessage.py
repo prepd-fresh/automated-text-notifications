@@ -12,13 +12,12 @@ def sendSingleMessage(message, phoneNumber, blacklist="user_data/blacklist.txt")
     black_list = open(blacklist, "r")
     black_listed_nums = black_list.readlines()
 
-    for number in enumerate(black_listed_nums):
-        if phoneNumber in number:
+    for number in black_listed_nums:
+        if phoneNumber in number or number in phoneNumber:
             print("Sorry, the number: {} is in the black list.".format(phoneNumber))
             return
 
     print("Sending \"{}\" to {}".format(message, phoneNumber))
-
     try:
         client = messagebird.Client(c.API_KEY)
         # send the message
